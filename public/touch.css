@@ -1,0 +1,106 @@
+/*
+  dev: Sazumi Viki
+  ig: @moe.sazumiviki
+  gh: github.com/sazumivicky
+  site: sazumi.moe
+*/
+
+.assistive-touch {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid #cdb6b675;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.assistive-image {
+    width: 100%;
+    height: auto;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: rgb(255 255 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.popup-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.popup-container .close-btn {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.popup-container .close-btn:hover {
+    color: #555;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-icon img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+.social-icon span {
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

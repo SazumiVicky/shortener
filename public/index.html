@@ -1,0 +1,40 @@
+<!--
+  dev: Sazumi Viki
+  ig: <a href="https://www.instagram.com/moe.sazumiviki">@moe.sazumiviki</a>
+  gh: <a href="https://github.com/sazumivicky">github.com/sazumivicky</a>
+  site: <a href="https://sazumi.moe">sazumi.moe</a>
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazumi | Shortener Link</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="icon" class=js-site-favicon type=image/ico href="https://cdn.jsdelivr.net/gh/SazumiVicky/Storage@main/meow.ico">
+    <meta name="description" content="Sazumi Shortener Link is a URL shortening service that allows you to create shorter and easier-to-remember URLs. Use Shortener Link now to shorten your links!">
+    <meta name="twitter:description" content="Sazumi Shortener Link is a URL shortening service that allows you to create shorter and easier-to-remember URLs. Use Shortener Link now to shorten your links!">
+    <meta property="og:description" content="Sazumi Shortener Link is a URL shortening service that allows you to create shorter and easier-to-remember URLs. Use Shortener Link now to shorten your links!">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./touch.css">
+</head>
+<body>
+<div class="container">
+    <h1>🐱 Shortener Link</h1>
+    <form id="shortenForm">
+        <input id="longUrlInput" type="text" placeholder="Example: https://sazumi.moe">
+        <button type="submit">Shorten</button>
+    </form>
+    <div class="result" id="shortUrlResult">
+        <p>History:</p>
+        <ul id="shortUrlList"></ul>
+    </div>
+</div>
+<footer>
+    <p>&copy; sazumi.moe, Cloud. All rights reserved.</p>
+    <script src="./index.js"></script>
+    <script src="./touch.js"></script>
+</footer>
+</body>
+</html>

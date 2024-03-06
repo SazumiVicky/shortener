@@ -1,0 +1,18 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sazumi Viki",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nanoid": "^5.0.5",
+    "path": "^0.12.7"
+  }
+}
